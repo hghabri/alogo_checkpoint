@@ -1,0 +1,19 @@
+ALGORITHM algo_checkpoint
+VAR
+
+    character: CHAR;
+    num_word: INTEGER:=0;
+    num_char:INTEGER:=0;
+    num_vowels: INTEGER:=0;
+BEGIN
+ DO 
+ read(character);
+ num_char:= num_char+1;
+ IF (character=" ") THEN
+ num_word:= num_word+1
+ ELSE
+ IF (character IN [a,e,i,o,u,y]) THEN
+ num_vowels: num_vowels+1;
+ WHILE (character<> ".")
+ Write ("The number of character is ",num_char," the number of word is ",num_word," and the number of vowels is ",num_vowels);
+ END
